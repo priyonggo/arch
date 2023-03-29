@@ -1,0 +1,78 @@
+
+<!-- Modal Login Start-->
+<div class="modal fade login" id="loginModal">
+  <div class="modal-dialog login animated">
+      <div class="modal-content z-index-0">
+          <div class="modal-header p-0 position-relative mt-n4 mx-3 z-index-2">
+            <div class="bg-gradient-info shadow-info border-radius-lg py-3 pe-1 text-center py-4">
+              <h4 class="font-weight-bolder text-white modal-title mt-1 mb-0">Login</h4>
+              <!-- <p class="mb-1 text-sm text-white">Selamat datang kembali</p> -->
+          </div>
+              <!-- <h4 class="modal-title"></h4> -->
+          </div>
+          <div class="modal-body">
+              <div class="box">
+                  <div class="content">
+                      
+                      <div class="division">
+                          <div class="line l"></div>
+                          <span>or</span>
+                          <div class="line r"></div>
+                      </div>
+                      <div class="error inside-alert"></div>
+                      <div class="form loginBox">
+                          <form html="multipart true" action="/login" accept-charset="UTF-8" data-remote="true" method="post">
+                              <input type="text" name="email" class="form-control" placeholder="Email" />
+                              <input type="password" name="password" class="form-control" placeholder="Password" />
+                              <input type="hidden" name="destination" value="dashboard" autocomplete="off" />
+                              <input type="hidden" name="url" value="https%3A%2F%2Fwww.andaraarchitect.com%2Ftemplates%2Fpremium" autocomplete="off" />
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <input type="submit" name="commit" value="Login" class="btn btn-default btn-login" data-disable-with="Login" />
+                                  </div>
+                                  
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="content registerBox" style="display:none;">
+                      <div class="form">
+                          <form html="multipart true" action="/register" accept-charset="UTF-8" data-remote="true" method="post">
+                              <input type="text" name="email" class="form-control" placeholder="Email" />
+                              <input type="password" name="password" class="form-control" placeholder="Password" />
+                              <input type="password" name="password_confirmation" class="form-control" placeholder="Repeat Password" />
+                              <input type="hidden" name="destination" value="dashboard" autocomplete="off" />
+                              <input type="hidden" name="url" value="https%3A%2F%2Fwww.andaraarchitect.com%2Ftemplates%2Fpremium" autocomplete="off" />
+                              <label class="checkbox">
+                                  <input type="checkbox" value="1" data-toggle="checkbox" name="subscribed" class="ct-info checkbox-subscribe">
+                                  Subscribe me to the Newsletter
+                              </label>
+                              <input type="submit" name="commit" value="Create account" class="btn btn-default btn-register" data-disable-with="Create account" />
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <div class="forgot login-footer">
+                <span class="my-auto">
+                    Belum punya akun ? 
+                    <a href="javascript: showRegisterForm();" rel="nofollow" class="text-info text-gradient font-weight-bold">Daftar</a>
+                </span>
+                  
+                  <br />
+                  <!-- <span><a rel="nofollow" href="/forgot-password">Lupa password</a> ?</span> -->
+              </div>
+              <div class="register-footer" style="display:none">
+                <span class="my-auto">
+                    Sudah punya akun ? 
+                    <a href="javascript: showLoginForm();" rel="nofollow" class="text-info text-gradient font-weight-bold">Login</a>
+                </span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal Login End -->
